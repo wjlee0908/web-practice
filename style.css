@@ -1,0 +1,67 @@
+body{
+    font-family: "나눔고딕", "맑은 고딕";
+    margin:0;
+}
+a {
+    color:black
+}
+ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #D9C382;
+    color: #F2F2F2;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navigation_bar {
+    overflow: hidden;
+    background-color: #593E3C;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navigation_bar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid ol {
+    padding-left:33px;
+}
+#gird #article{
+    padding-left: 25px;
+}
+@media(max-width:800px) {
+    #grid {
+        display: block;
+    }
+    ol {
+        border-right: none;
+    }
+    h1 {
+        border-bottom: none;
+    }
+}
+
+#icon_img {
+    padding: 10px;
+}
