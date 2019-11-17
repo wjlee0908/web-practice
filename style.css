@@ -23,6 +23,11 @@ ol {
     font-size: 40px;
 }
 
+.header a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
 .navigation_bar {
     overflow: hidden;
     background-color: #593E3C;
@@ -38,6 +43,10 @@ ol {
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+}
+
+.navigation_bar a:hover{
+    background-color: black;
 }
 
 #grid {

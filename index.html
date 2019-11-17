@@ -8,7 +8,7 @@
 
 <body>
     <div class="header">
-        <h1>경희카페</h1>
+        <h1><a href="index.html">경희카페</a></h1>
         <p>경희대학교 주변 <b>카페</b> 정보</p>
     </div>
 
@@ -18,15 +18,25 @@
         <a href="dalkomm.html">달콤커피</a>
         <a href="#" class="right">Link</a>
     </div>
-<ol>
-    <li>서울캠퍼스</li>
-    <li>국제캠퍼스</li>
-</ol>
 
-<ul>
-<li><a href="tomtom.html">탐탐</a></li>
-<li><a href="sweeteadu.html">스위티두</a></li>
-<li><a href="dalkomm.html">달콤커피</a></li>
-</ul>
+    <button onclick="getLocation()">get my location</button>
+    <p id = "demo"></p>
+
+    <script>
+        var x = document.getElementById("demo");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else {
+                x.innerHTML = "Geolocation is not supported by this browser"
+            }
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitiude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
 </body>
 </html>
